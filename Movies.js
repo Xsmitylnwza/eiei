@@ -20,13 +20,15 @@ class Movies {
     const index = this.movies.findIndex((movie) => movie.title.toLowerCase() === title.toLowerCase())
     console.log('testhello')
     if(index < 0) return undefined
+    let copymovie
     this.movies.forEach((movie) => {
       if(movie.title.toLowerCase() === title.toLowerCase()){
-        movie = {movie,...updatedDetails}
+        copymovie = movie
       }
     })
+    this.movies[index] = {...copymovie,...{...updatedDetails}}
     
-    return this.movies[index] = {title:'Inception',director:'Christophernolan',year:2008,genre:'Action',updatedDetails}
+    return this.movies[index]
   }
   deleteMovieByTitle(title) {
     let result = this.movies.findIndex((movie) => movie.title.toLowerCase() === title.toLowerCase())
