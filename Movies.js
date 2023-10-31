@@ -18,7 +18,6 @@ class Movies {
   }
   updateMovie(title, updatedDetails) {
     const index = this.movies.findIndex((movie) => movie.title.toLowerCase() === title.toLowerCase())
-    console.log('testhello')
     if(index < 0) return undefined
     let copymovie
     this.movies.forEach((movie) => {
