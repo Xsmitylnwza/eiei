@@ -42,12 +42,4 @@ class Movies {
   }
 
 }
-const DatabaseMovie = new Movies();
-// console.log(DatabaseMovie.addMovie('Inception', 'Christopher Nolan', 2010, 'Science Fiction'))
-// console.log(DatabaseMovie.addMovie('Pulp Fiction', 'Quentin Tarantino', 1994, 'Crime'))
-// console.log(DatabaseMovie.addMovie('Interstellar', 'Christopher Nolan', 2014))
-DatabaseMovie.addMovie('Inception','Christopher Nolan',2010,'Science Fiction')
-DatabaseMovie.addMovie('The Shawshank Redemption','Frank Darabont',1994,'Drama')
-DatabaseMovie.addMovie('The Dark Knight','Christopher Nolan',2008,'Action')
-console.log(DatabaseMovie.updateMovie('inception',{director: 'James Cameron'}))
 module.exports = Movies
